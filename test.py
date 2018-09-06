@@ -1,11 +1,14 @@
 from datetime import datetime
 
+def lb():
+    print("-----------------------------------------------------------------------------------------------------")
+
+
 name = input("greetings, what is your name?: ")
 age = input("what is your age?: ")
-print("-----------------------------------------------------------------------------------------------------")
-print("-----------------------------------------------------------------------------------------------------")
-print("-----------------------------------------------------------------------------------------------------")
-
+lb() #simple line break
+lb()
+lb()
 
 print(name + " knows how to party. Age: " + age)
 
@@ -28,6 +31,7 @@ def QA():
         print("HEY YOU LEAVE SPORKS OUT OF THIS!")
     elif question == "game":
         print("Well I may make a simple text adventure to learn python.. we'll see.")
+        repeatChoice()
     elif question == "conditions":
         print("equals: a == b")
         print("not equals: a != b")
@@ -65,6 +69,11 @@ def QA():
         else:
             print("I'm sorry, I don't know that operator yet...")
             repeatChoice()
+    elif question == "what is the meaning of life" or question == "what is the meaning of life?":
+        lb()
+        print('42')
+        lb()
+        repeatChoice()
     else:
         print('You asked "' + question + '..." Why?')
         repeatChoice()
