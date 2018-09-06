@@ -9,4 +9,5 @@
   <li><b>time</b>: prints datetime.now()</li>
   <li><b>do math</b> or <b>math</b>: A simple math function</li>
   <li><b>what is the meaning of life(?)</b>: Tells you the meaning of life</li>
+  <li><b>help</b>: Provides a list of commands</li>
 </ul>
